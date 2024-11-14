@@ -1466,7 +1466,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("⚠️ Uɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url="https://t.me/Mc_films_channel"),
+                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url="https://t.me/addlist/su-tJBv_e9VlN2Nl"),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
@@ -1627,15 +1627,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "group_info":
         buttons = [[
-            InlineKeyboardButton('🪄ᴀʟʟ ᴏᴜʀ ʟɪɴᴋꜱ🪄', url="t.me/Mc_Film_Mainchannel")
+            InlineKeyboardButton('🪄ᴀʟʟ ᴏᴜʀ ʟɪɴᴋꜱ🪄', url="t.me/addlist/su-tJBv_e9VlN2Nl")
        ],[
-            InlineKeyboardButton('🎬ɢʀᴏᴜᴘ🎬', url="t.me/Mc_Group_films"),
-            InlineKeyboardButton('🏅ᴄʜᴀɴɴᴇʟ🏅', url="t.me/Mc_films_channel")
+            InlineKeyboardButton('🎬ɢʀᴏᴜᴘ🎬', url="t.me/RbyMovieRequest/302"),
+            InlineKeyboardButton('🏅ᴄʜᴀɴɴᴇʟ🏅', url="t.me/RbyLinkzz")
        ],[
-            InlineKeyboardButton('📣Mᴏᴠɪᴇs ᴜᴩᴅᴀᴛᴇꜱ📣', url="t.me/Mc_Films_Update"),
-            InlineKeyboardButton('🤖ꜱᴜᴘᴘᴏʀᴛ🤖', url="https://t.me/Mc_Films_Update")
+            InlineKeyboardButton('📣Mᴏᴠɪᴇs ᴜᴩᴅᴀᴛᴇꜱ📣', url="t.me/RbyLinkzz/47"),
+            InlineKeyboardButton('💸 Premium 💸', url="https://t.me/RbyPremium/431")
        ],[
-            InlineKeyboardButton('➕️ʜᴇʟᴩ➕️', url="t.me/Mc_Group_Adminbot")
+            InlineKeyboardButton('➕️ʜᴇʟᴩ➕️', url="t.me/RbyAdminBot")
        ],[ 
             InlineKeyboardButton('⌫ ʙᴀᴄᴋ', callback_data='start')
         ]]
