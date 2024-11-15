@@ -76,8 +76,8 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/Mc_Group_Films>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/Mc_Group_Films")]])
+         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/RbyMovieRequest/302>Movie Group</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/RbyAdminBot")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -1075,7 +1075,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                               InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK),
                           InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)
                        ],[
-                          InlineKeyboardButton("☘️ 𝗡𝟯𝟯𝗩𝗔𝗥𝗣 ☘️", url="https://t.me/Mc_Group_Films")
+                          InlineKeyboardButton("☘️ 𝗡𝟯𝟯𝗩𝗔𝗥𝗣 ☘️", url="https://t.me/addlist/su-tJBv_e9VlN2Nl")
                              ]
                             ]
                         )
@@ -1168,7 +1168,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK),
                           InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)
                        ],[
-                          InlineKeyboardButton("☘️ 𝗡𝟯𝟯𝗩𝗔𝗥𝗣 ☘️", url="https://t.me/Mc_Group_Films")
+                          InlineKeyboardButton("☘️ 𝗡𝟯𝟯𝗩𝗔𝗥𝗣 ☘️", url="https://t.me/addlist/su-tJBv_e9VlN2Nl")
                  ]
                 ]
             )
@@ -1459,7 +1459,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/Mc_Group_Films")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/RbyMovieRequest/302")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1483,8 +1483,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         btn2 = [[
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
-               ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/Mc_Group_Films")
+               ],[https://t.me/RbyMovieRequest/302")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1543,7 +1542,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('☘️ 𝗡𝟯𝟯𝗩𝗔𝗥𝗣 ☘️', url="https://t.me/Mc_Group_Films")
+                    InlineKeyboardButton('☘️ 𝗡𝟯𝟯𝗩𝗔𝗥𝗣 ☘️', url="https://t.me/addlist/su-tJBv_e9VlN2Nl")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1631,7 +1630,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('❗❗ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ❗❗', callback_data='disclaimer')
         ], [
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url="https://t.me/Mc_Group_Films"),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url="https://t.me/RbyAdminBot"),
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url=CHNL_LNK)
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
